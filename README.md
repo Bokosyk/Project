@@ -47,6 +47,6 @@ Link to GitHub repository:
 
 ## Author Info
 
-- E-mail: lparrado321@gmail.com
+
 
 [Back To The Top](#read-me-template)
