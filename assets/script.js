@@ -20,10 +20,14 @@ $(document).ready(function () {
     // console.log(queryURL);
 
     //QueryURL for youtube playlists still needs to be found.
-    var queryURL = "https://www.googleapis.com/youtube/v3/playlists" + userInput + "&appid=" + apiKeyYoutube;
+    var queryURL2 = "https://youtube.googleapis.com/youtube/v3/videos?key=[YOUR_API_KEY]" + apiKeyYoutube;
     $.ajax({
-        url: queryURL,
+        url: queryURL2,
         method: "GET",
+        database: "json",
+        success: function(response2) {
+            console.log(response2);
+        }
     })
 
 
