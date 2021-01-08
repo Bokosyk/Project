@@ -17,8 +17,11 @@ body {
   border-radius: 10px;
 }
 
-/* for logo */
+/* Navbar*/
 .logo {
   font-size: 2rem;
   font-weight: bolder;
+}
+.hidden {
+  display: none;
 }
