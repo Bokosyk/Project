@@ -1,14 +1,10 @@
-/* body {
-  background-color: red;
-  height: 100%;
-} */
 footer {
   position: fixed;
   padding: 2rem 1rem 4rem !important;
   bottom: 2%;
   left: 0%;
   z-index: 0.5;
-  height: 1%;
+  height: .5%;
   width: 100%;
   font-style: oblique;
 }
