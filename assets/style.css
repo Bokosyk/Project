@@ -15,3 +15,9 @@ footer {
 body {
   background: black;
 }
+
+
+.home-page-tile { /* CSS for home page buttons */
+  border-radius: 10px;
+}
+

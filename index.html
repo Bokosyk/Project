@@ -1,117 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mood</title>
 
-    <!-- Bulma CSS Stylesheet -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mood</title>
 
-    <!-- Personal CSS Stylesheet -->
-    <link rel="stylesheet" href="./Assets/style.css" />
-  </head>
+  <!-- Montserrat Font from Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="https://bulma.io">
-          <!--change to Mood image-->
-          <img
-            src="https://bulma.io/images/bulma-logo.png"
-            alt="Bulma: Free, open source, and modern CSS framework based on Flexbox"
-            width="112"
-            height="28"
-          />
-        </a>
+  <!-- Bulma CSS Stylesheet -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
 
-        <a
-          role="button"
-          class="navbar-burger"
-          aria-label="menu"
-          aria-expanded="false"
-        >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-    </nav>
-    <!--Tiles -->
-    <section>
-      <div class="tile is-ancestor">
-        <div class="tile is-vertical is-8">
-          <div class="tile">
-            <div class="tile is-parent is-vertical">
-              <!-- Select Your Mood -->
-              <article class="tile is-child notification is-primary">
-                <p class="title">Select Your Mood</p>
-                <p class="subtitle">Top tile</p>
-              </article>
-              <!-- Random Mood -->
-              <article class="tile is-child notification is-warning">
-                <p class="title">Random Mood</p>
-                <p class="subtitle">Bottom tile</p>
-              </article>
-            </div>
-            <!-- Weather Based -->
-            <div class="tile is-parent">
-              <article class="tile is-child notification is-info">
-                <p class="title">Weather Based</p>
-                <p class="subtitle">With an image</p>
-                <figure class="image is-4by3">
-                  <img src="https://bulma.io/images/placeholders/640x480.png" />
-                </figure>
-              </article>
-            </div>
+  <!-- Personal CSS Stylesheet -->
+  <link rel="stylesheet" href="./Assets/style.css" />
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://bulma.io">
+        <!--change to Mood image-->
+        <img src="https://bulma.io/images/bulma-logo.png"
+          alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" width="112" height="28" />
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  </nav>
+
+  <!--Tiles -->
+  <section>
+    <div class="tile is-ancestor">
+      <div class="tile is-vertical is-8">
+        <div class="tile">
+          <div class="tile is-parent is-vertical">
+
+            <!-- Select Your Mood -->
+            <article class="tile is-child notification is-primary">
+              <div class="home-page-tile">
+                <img
+                  src="https://images.pexels.com/photos/208147/pexels-photo-208147.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  alt="Mood Card">
+                <div class="bg">
+                  <p>Mood
+                  <p>
+                    <a id="mood-btn" href="./moodselection.html" target="_blank"><button type="button">BROWSE MOODS</button></a>
+                </div>
+            </article>
+
+            <!-- Random Mood -->
+            <article class="tile is-child notification is-warning">
+              <img
+                src=""
+                alt="Random Mood">
+              <div class="bg">
+                <p>Random Mood
+                <p>
+                  <a id="rdm-mood-btn" href="./randommood.html" target="_blank"><button type="button">GENERATE RANDOM MOOD</button></a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Weather Based -->
+          <div class="tile is-parent">
+            <article class="tile is-child notification is-info">
+              <img
+                src=""
+                alt="Weather">
+              <div class="bg">
+                <p>Weather Based Song Recommendations
+                <p>
+                  <a id="weather-btn" href="./weather.html" target="_blank"><button type="button">SEARCH
+                      CITY</button></a>
+              </div>
+            </article>
           </div>
         </div>
-        <!-- Weather Based -->
-        <div class="tile is-parent">
-          <article class="tile is-child notification is-success">
-            <div class="content">
-              <p class="title">Stored Playlist</p>
-              <p class="subtitle">With even more content</p>
-              <div class="content">
-                <!-- Content -->
-              </div>
-            </div>
-          </article>
-        </div>
       </div>
-    </section>
-    
-       <!-- Footer -->
-    <footer class="footer fiixed-bottom">
-      <div class="content has-text-centered">
-        <p>
-          <strong>Mood</strong> by
-          <a href="https://jgthms.com">GoGitters</a>. <br><a href=" ">About Us</a>.
-          <p class="text-center">© Copyright</p>
-          
-          <!-- <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The
+
+      <!-- Stored Playlist -->
+      <div class="tile is-parent">
+        <article class="tile is-child notification is-success">
+          <img
+            src=""
+            alt="Playlist">
+          <div class="bg">
+            <p>Stored Playlists
+            <p>
+              <a id="playlist-btn" href="./storedplaylist.html" target="_blank"><button type="button">BROWSE PLAYLIST</button></a>
+          </div>
+
+          <!-- Content -->
+      </div>
+    </div>
+    </article>
+    </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer fiixed-bottom">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Mood</strong> by
+        <a href="https://jgthms.com">GoGitters</a>. <br><a href=" ">About Us</a>.
+      <p class="text-center">© Copyright</p>
+
+      <!-- <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The
           website content is licensed -->
-          <!-- <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+      <!-- <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
             >CC BY NC SA 4.0</a
           >. -->
-        </p>
-      </div>
-    </footer>
+      </p>
+    </div>
+  </footer>
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./Assets/script.js"></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="./Assets/script.js"></script>
+</body>
+
 </html>
