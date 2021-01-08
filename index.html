@@ -13,6 +13,9 @@
   <!-- Bulma CSS Stylesheet -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
   <!-- Personal CSS Stylesheet -->
   <link rel="stylesheet" href="./Assets/style.css" />
 
@@ -20,21 +23,26 @@
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="https://bulma.io">
-        <!--change to Mood image-->
-        <img src="https://bulma.io/images/bulma-logo.png"
-          alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" width="112" height="28" />
-      </a>
-
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
+  <nav class="navbar" role="navigation" aria-label="dropdown navigation">
+      
+    <!-- Hamburger Button -->
+    <div class="navbar-item has-dropdown is-hoverable navbar-end">
+    <i class="is-arrowless navbar-link fas fa-bars fa-2x"></i>
+      <div class="navbar-dropdown is-right">
+        <a class="navbar-item">
+          About Us
+        </a>
+        <a class="navbar-item">
+          Select Your Mood
+        </a>
+        <a class="navbar-item">
+          Random Mood
+        </a>
+        <a class="navbar-item">Stored Playlist</a>
+      </div>
     </div>
   </nav>
+
 
   <!--Tiles -->
   <section>
