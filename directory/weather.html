@@ -36,13 +36,13 @@
     <a class="navbar-item">
       About Us
     </a>
-    <a class="navbar-item" href="./directory/moodselection.html">
+    <a class="navbar-item" href="./moodselection.html">
       Select Your Mood
     </a>
-    <a class="navbar-item" href="directory/randommood.html">
+    <a class="navbar-item" href="./randommood.html">
       Random Mood
     </a>
-    <a class="navbar-item" href="directory/storedplaylist.html">Stored Playlist</a> 
+    <a class="navbar-item" href="./storedplaylist.html">Stored Playlist</a> 
   </div>
     
   <!-- Hamburger Button -->
@@ -50,6 +50,36 @@
   <i class="is-arrowless navbar-link fas fa-bars fa-2x pl-0"></i>
   </div>
 </nav>
+
+
+
+<!--Weather Container-->
+<div class="container">
+  <div class="row">
+    <div class="col-4 bg-light">
+      <p class="search-header my-1">Search for a city</p>
+      <div class="input-group mb-3">
+       <input id="city-input" type="text" class="form-control" placeholder="Enter city name" aria-label="Enter city name">
+        <div class="input-group-append">
+         <button class="btn btn-primary" type="button" id="search-button">
+          <i class="fas fa-search"></i>
+          </button>
+      </div>
+     </div>
+<!--Clear search history button-->
+<button class="btn btn-primary mb-3" type="button" id="clear-history">Clear history</button>
+ <form id="history"></form>
+  </div>
+  <div class="col-8">
+   <div class="row mr-0">
+    <div class="col-12 border border-dark m-3 rounded">
+     <div class="row">
+     <div class="col-12">
+      <span id="city-name" class="city-name align-middle"></span>
+       <img id="current-pic">
+       </div>
+    </div>
+
     <script
     src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -60,6 +90,15 @@
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"
   ></script>
-  <script src="./Assets/script.js"></script>
+  <script src="../assets/script.js"></script>
+  
+  <!--Footer below-->
+  <footer class="footer fixed-bottom">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Mood</strong> by
+        <a href="https://jgthms.com">GoGitters</a>. <br><a href=" ">About Us</a>.
+      <p class="text-center">© Copyright</p>
+      </footer>
 </body>
 </html>
