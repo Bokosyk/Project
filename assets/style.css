@@ -9,7 +9,7 @@ footer {
   font-style: oblique;
 }
 body {
-  background: black;
+  background: white;
 }
 
 .home-page-tile {
@@ -18,7 +18,7 @@ body {
 }
 
 /* Navbar*/
-.logo {
+nav h1{
   font-size: 2rem;
   font-weight: bolder;
 }

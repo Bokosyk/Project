@@ -5,128 +5,118 @@
  <meta charset="UTF-8" />
  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
  <title>Mood</title>
+
+   <!-- Montserrat Font from Google -->
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  
- <!-- Montserrat Font from Google -->
- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- Bulma CSS Stylesheet -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
  
- <!-- Bulma CSS Stylesheet -->
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
  
- <!-- Personal CSS Stylesheet -->
- <link href="stylesheet" href="./assets/style.css"/>
+   <!-- Personal CSS Stylesheet -->
+   <link rel="stylesheet" href="../assets/style.css" />
 </head>
  
-<body class="main-page">
- <!--Navbar-->
- <nav class="navbar" role="navigation" aria-label="dropdown navigation">
-   <!-- Logo -->
-   <div class="navbar-brand">
+<body class="selection">
+ <!-- Navbar -->
+ <nav class="navbar p-4" role="navigation" aria-label="dropdown navigation">
+    
+  <!-- Logo -->
+  <div class="navbar-brand">
+    <a class="navbar-item" href="../index.html">
+      
     <h1 class="logo">Mood</h1>
-      <a href="./index.html"></a>
+    </a>
+  </div>
+
+  <!-- Items displayed on click of Button-->
+  <div class="navbar-item navbar-end hidden" id="select-link">
+    <a class="navbar-item">
+      About Us
+    </a>
+    <a class="navbar-item" href="./directory/moodselection.html">
+      Select Your Mood
+    </a>
+    <a class="navbar-item" href="directory/randommood.html">
+      Random Mood
+    </a>
+    <a class="navbar-item" href="directory/storedplaylist.html">Stored Playlist</a> 
   </div>
     
-   <!-- Hamburger Button -->
-   <div class="navbar-item has-dropdown is-hoverable navbar-end">
-   <i class="is-arrowless navbar-link fas fa-bars fa-2x"></i>
-     <div class="navbar-dropdown is-right">
-       <a class="navbar-item">
-         About Us
-       </a>
-       <a class="navbar-item" href="./directory/moodselection.html">
-         Select Your Mood
-       </a>
-       <a class="navbar-item" href="directory/randommood.html">
-         Random Mood
-       </a>
-       <a class="navbar-item" href="directory/storedplaylist.html">Stored Playlist</a>
-      
-     </div>
-   </div>
- </nav>
+  <!-- Hamburger Button -->
+  <div class="navbar-item is-hoverable navbar-end pl-0" id="nav-Btn">
+  <i class="is-arrowless navbar-link fas fa-bars fa-2x pl-0"></i>
+  </div>
+</nav>
  <!--Page Title with question about current mood-->
  <div class="container">
-   <h5>What is your Mood today?</h5>
-   <hr/>
- </div>
+  <h5>What is your Mood today?</h5>
+  <hr/>
+</div>
+
+<!--Tiles for moods-->
+ <!-- <div class="tile is-ancestor"> -->
+  <div class="tile is-vertical is-8">
+    <div class="tile">
+      <div class="tile is-parent is-vertical">
+        <article class="tile is-child notification is-primary">
+          <p class="title">Calm</p>
+          <p class="subtitle">Top tile</p>
+        </article>
+        <article class="tile is-child notification is-warning">
+          <p class="title">Happy</p>
+          <p class="subtitle">Bottom tile</p>
+        </article>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child notification is-info">
+          <p class="title">Sad</p>
+          <p class="subtitle">With an image</p>
+          <figure class="image is-4by3">
+            <img src="https://bulma.io/images/placeholders/640x480.png">
+          </figure>
+        </article>
+      </div>
+    </div>
+    <div class="tile is-parent">
+      <article class="tile is-child notification is-danger">
+        <p class="title">Anxious/Sad</p>
+        <p class="subtitle">Aligned with the right tile</p>
+        <div class="content">
+          <!-- Content -->
+        </div>
+      </article>
+    </div>
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child notification is-success">
+      <div class="content">
+        <p class="title">Irritated</p>
+        <p class="subtitle">With even more content</p>
+        <div class="content">
+          <!-- Content -->
+        </div>
+      </div>
+    </article>
+  </div>
+</div>
+
  
  
- <!--Buttons for different moods-->
- <!-- <div class="buttons are-large are-fullwidth are">
-   <button class="button is-primary is-light is-rounded">Happy</button>
-   <button class="button is-link is-light is-rounded">Calm</button>
- </div>
-  <div class="buttons are-large">
-   <button class="button is-info is-light is-rounded">Anxious/Sad</button>
-   <button class="button is-success is-light is-rounded">Energetic</button>
- </div>
- <div class="button are-large are-fullwidth">
-   <button class="button is-warning is-light is-rounded">Stressed</button>
-   <button class="button is-danger is-light is-rounded">Irritated</button>
- </div>
- </div> -->
- <!--Tiles for moods-->
-  <!-- <div class="tile is-ancestor"> -->
-   <div class="tile is-vertical is-8">
-     <div class="tile">
-       <div class="tile is-parent is-vertical">
-         <article class="tile is-child notification is-primary">
-           <p class="title">Calm</p>
-           <p class="subtitle">Top tile</p>
-         </article>
-         <article class="tile is-child notification is-warning">
-           <p class="title">Happy</p>
-           <p class="subtitle">Bottom tile</p>
-         </article>
-       </div>
-       <div class="tile is-parent">
-         <article class="tile is-child notification is-info">
-           <p class="title">Sad</p>
-           <p class="subtitle">With an image</p>
-           <figure class="image is-4by3">
-             <img src="https://bulma.io/images/placeholders/640x480.png">
-           </figure>
-         </article>
-       </div>
-     </div>
-     <div class="tile is-parent">
-       <article class="tile is-child notification is-danger">
-         <p class="title">Anxious/Sad</p>
-         <p class="subtitle">Aligned with the right tile</p>
-         <div class="content">
-           <!-- Content -->
-         </div>
-       </article>
-     </div>
-   </div>
-   <div class="tile is-parent">
-     <article class="tile is-child notification is-success">
-       <div class="content">
-         <p class="title">Irritated</p>
-         <p class="subtitle">With even more content</p>
-         <div class="content">
-           <!-- Content -->
-         </div>
-       </div>
-     </article>
-   </div>
- </div>
+   
  
  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-   crossorigin="anonymous"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-   integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-   crossorigin="anonymous"></script>
- <script src="./Assets/script.js"></script>
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="../assets/script.js"></script>
  
  <!--Footer goes here-->
- <footer class="footer fixed-bottom">
-   <div class="content has-text-centered">
-     <p>
-       <strong>Mood</strong> by
-       <a href="https://jgthms.com">GoGitters</a>. <br><a href=" ">About Us</a>.
-     <p class="text-center">© Copyright</p>
  
 </body>
  
