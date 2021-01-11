@@ -1,11 +1,13 @@
 body,
 html {
-  margin: 0;
+  margin: 0px !important;
   padding: 0;
   /* padding-top: 100px; */
-  height: 100%;
+  min-height: 100%;
   background-color: #2f3640;
   /* Temporary bg color to see div*/
+  margin-bottom: 100px;
+  clear: both;
 }
 
 /* Navbar*/
@@ -69,8 +71,9 @@ div.tile.is-ancestor {
 
 article {
   /* Affects position, width and height of home page tiles*/
-  right: 3vw;
-  height: 600px;
+  /* right: 3vw; */
+  /* height: 600px; */
+  height: 40vh;
   width: 30vw;
 }
 
@@ -128,7 +131,6 @@ article {
   background-position: center center;
 }
 
-
 /* #rdm-mood-card {
   background-image: url(https://cdn.pixabay.com/photo/2017/04/19/20/10/morning-2243465_960_720.jpg);
   background-repeat: no-repeat;
@@ -136,10 +138,12 @@ article {
 } */
 
 footer {
+  position: fixed;
+  bottom: 0;
   display: block;
   background-color: #f1f1f1;
-  padding: 70px 0px 30px 0px;
-  margin: 70px 0px 0px 0px;
+  /* padding: 70px 0px 30px 0px; */
+  /* margin: 70px 0px 0px 0px; */
   z-index: 0.5;
   height: auto;
   width: 100%;
@@ -160,7 +164,7 @@ footer {
 }
 
 .fa:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .fa-facebook {
@@ -182,7 +186,6 @@ footer {
   background: #745f49;
   color: white;
 }
-
 
 .input.is-rounded {
   /*Search bar in mood wasn't showing.*/
