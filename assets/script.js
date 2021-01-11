@@ -9,4 +9,17 @@ $(document).ready(function () {
     // Show Button
     $("#mood-btn").toggle("hidden");
   });
+
+  // Select weather mood
+  $("#weather-card").hover(function () {
+    // Show Button
+    $("#weather-btn").toggle("hidden");
+  });
+
+  // Select Stored Playlist
+  $("#playlist-card").hover(function () {
+    // Show Button
+    $("#playlist-btn").toggle("hidden");
+  });
+
 });
