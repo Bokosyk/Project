@@ -14,9 +14,41 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
 
   <!-- Personal CSS Stylesheet -->
-  <link rel="stylesheet" href="./Assets/style.css" />
+  <link rel="stylesheet" href="../Assets/style.css" />
 </head>
 
+<body class="selection">
+  <!-- Navbar -->
+  <nav class="navbar p-4" role="navigation" aria-label="dropdown navigation">
+     
+   <!-- Logo -->
+   <div class="navbar-brand">
+     <a class="navbar-item" href="../index.html">
+       
+     <h1 class="logo">Mood</h1>
+     </a>
+   </div>
+ 
+   <!-- Items displayed on click of Button-->
+   <div class="navbar-item navbar-end hidden" id="select-link">
+     <a class="navbar-item">
+       About Us
+     </a>
+     <a class="navbar-item" href="./moodselection.html">
+       Select Your Mood
+     </a>
+     <a class="navbar-item" href="./randommood.html">
+       Random Mood
+     </a>
+     <a class="navbar-item" href="./storedplaylist.html">Stored Playlist</a> 
+   </div>
+     
+   <!-- Hamburger Button -->
+   <div class="navbar-item is-hoverable navbar-end pl-0" id="nav-Btn">
+   <i class="is-arrowless navbar-link fas fa-bars fa-2x pl-0"></i>
+   </div>
+ </nav>
+  
 <body>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -25,7 +57,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
-  <script src="./Assets/script.js"></script>
+  <script src="../Assets/script.js"></script>
 
   <footer class="footer fixed-bottom">
     <div class="content has-text-centered">
