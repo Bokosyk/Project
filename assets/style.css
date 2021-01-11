@@ -10,21 +10,22 @@ html {
 
 /* Navbar*/
 nav.navbar {
-  position: top;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #353b48;
+  background-color: #f1f1f1;
 }
 
 nav h1 {
   font-size: 2rem;
   font-weight: bolder;
-  color: white;
+  color: #745f49;
+  font-family: Montserrat, sans-serif;
 }
 
 .navbar a {
-  color: white;
+  color: #745f49;
 }
 .hidden {
   display: none;
@@ -33,7 +34,7 @@ nav h1 {
   background-color: black;
 }
 h5 {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: rem;
   font-weight: 100;
 }
@@ -68,7 +69,7 @@ div.tile.is-ancestor {
 
 article {
   /* Affects position, width and height of home page tiles*/
-  right: 14vw;
+  right: 3vw;
   height: 600px;
   width: 30vw;
 }
@@ -93,10 +94,12 @@ article {
   background-position: center center;
 }
 .sel-mood:hover {
+  background-color: #e7e7de;
   background-image: none;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  transition: all 1s ease-in-out;
 }
 /* For Weather Based Tile  */
 .weather-mood {
@@ -106,6 +109,7 @@ article {
 }
 
 .weather-mood:hover {
+  background-color: #e7e7de;
   background-image: none;
   background-repeat: no-repeat;
   background-position: center center;
@@ -118,6 +122,7 @@ article {
 }
 
 .stored-pl:hover {
+  background-color: #e7e7de;
   background-image: none;
   background-repeat: no-repeat;
   background-position: center center;
@@ -131,15 +136,53 @@ article {
 } */
 
 footer {
-  position: fixed;
-  padding: 2rem 1rem 4rem !important;
-  bottom: 0;
-  left: 0;
+  display: block;
+  background-color: #f1f1f1;
+  padding: 70px 0px 30px 0px;
+  margin: 70px 0px 0px 0px;
   z-index: 0.5;
-  height: 0.5%;
+  height: auto;
   width: 100%;
   font-family: Montserrat, sans-serif;
+  text-align: center;
 }
+
+/* SOCIAL MEDIA BUTTONS */
+
+.fa {
+  padding: 20px 10px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #745f49;
+  color: white;
+}
+
+.fa-twitter {
+  background: #745f49;
+  color: white;
+}
+
+.fa-instagram {
+  background: #745f49;
+  color: white;
+}
+
+.fa-youtube {
+  background: #745f49;
+  color: white;
+}
+
 
 .input.is-rounded {
   /*Search bar in mood wasn't showing.*/
