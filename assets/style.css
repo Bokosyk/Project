@@ -74,6 +74,7 @@ article {
   right: 14vw;
   height: 600px;
   width: 30vw;
+  position: auto;
 }
 
 @media only screen and (max-width: 772px) { /* Mobile responsiveness for home page*/
