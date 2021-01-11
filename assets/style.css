@@ -8,8 +8,11 @@ footer {
   width: 100%;
   font-style: oblique;
 }
-body, html {
+body,
+html {
   height: 100%;
+  width: 100%;
+  background-color: black;
 }
 
 .home-page-tile {
@@ -18,7 +21,7 @@ body, html {
 }
 
 /* Navbar*/
-nav h1{
+nav h1 {
   font-size: 2rem;
   font-weight: bolder;
 }
@@ -27,11 +30,9 @@ nav h1{
 }
 .stored-playlist {
   background-color: black;
-
 }
 h5 {
   font-family: Montserrat;
   font-size: rem;
   font-weight: 100;
-
 }
