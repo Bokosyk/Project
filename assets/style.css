@@ -74,9 +74,13 @@ article {
   width: 30vw;
 }
 
-@media only screen and (max-width: 600px) {
-  article {
-    /* Trying to figure out how to fix error with tile positions when on mobile. */
+@media only screen and (max-width: 772px) { /* Mobile responsiveness for home page*/
+  .notification {
+    position: relative;
+    width: 80%;
+    height: 50%;
+    left: 10vw;
+  
   }
 }
 
