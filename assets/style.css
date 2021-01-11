@@ -114,3 +114,7 @@ footer {
   width: 100%;
   font-family: Montserrat, sans-serif;
 }
+
+.input.is-rounded { /*Search bar in mood wasn't showing.*/
+  margin-top: 120px;
+}
