@@ -11,9 +11,9 @@ html {
 /* Navbar*/
 
 
-nav.navbar.p-4 { /*Keeps the nav bar fixed to the top at all times.*/
+nav.navbar { /*Keeps the nav bar fixed to the top at all times.*/
   position: top;
-
+  
   top: 0;
   left: 0;
   width: 100%;
