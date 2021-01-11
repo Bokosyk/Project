@@ -10,8 +10,8 @@ html {
 
 /* Navbar*/
 
-
-nav.navbar.p-4 { /*Keeps the nav bar fixed to the top at all times.*/
+nav.navbar.p-4 {
+  /*Keeps the nav bar fixed to the top at all times.*/
   position: top;
 
   top: 0;
@@ -76,24 +76,30 @@ article {
   width: 30vw;
 }
 
-@media only screen and (max-width: 772px) { /* Mobile responsiveness for home page*/
+@media only screen and (max-width: 772px) {
+  /* Mobile responsiveness for home page*/
   .notification {
     position: relative;
     width: 80%;
     height: 50%;
     left: 10vw;
-  
   }
 }
 
 /* **HOME PAGE TILE IMAGES** */
-#mood-card {
+
+.sel-mood {
   background-image: url(https://cdn.pixabay.com/photo/2015/01/07/15/51/woman-591576_960_720.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-
+.sel-mood:hover {
+  background-image: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
 #rdm-mood-card {
   background-image: url(https://cdn.pixabay.com/photo/2017/04/19/20/10/morning-2243465_960_720.jpg);
   background-repeat: no-repeat;

@@ -4,4 +4,9 @@ $(document).ready(function () {
     $("#select-link").toggle(".hidden");
   });
 
+  // Select mood on hover
+  $("#mood-card").hover(function () {
+    // Show Button
+    $("#mood-btn").toggle("hidden");
+  });
 });
