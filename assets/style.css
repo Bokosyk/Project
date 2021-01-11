@@ -1,67 +1,29 @@
 body, html {
+  margin: 0; 
+  padding: 0;
   height: 100%;
-  background-color: #353b48; /* Temporary bg color to see div*/
-}
-
-.button { /* CSS for home page buttons */
-  background-color: #fff;
-  border-color: #745f49!important;
-  border: 2px solid #745f49;
-  font-size: 14px;
-  padding: 12px 16px;
-  margin-left: 3px;
-  margin-bottom: 5px;
-  border-bottom-color: rgb(255,255,255);
-  border-bottom-left-radius: 0px;
-  font-family: Montserrat, sans-serif;
-  transition: 0.3s;
-}
-
-.button:hover{
-  cursor: pointer;
-  background: #745f49;
-  color: white;
-}
-
-/* **HOME PAGE TILE IMAGES** */
-div.tile.is-ancestor {
-  justify-content: center;
-  margin: 160px 0px 10px 0px;
-
-}
-
-div.tile.is-parent { /*Trying to figure out how to enlarge tiles to fill whole page.*/
-
-}
-
-#mood-card {
-  background-image: url(https://cdn.pixabay.com/photo/2015/01/07/15/51/woman-591576_960_720.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#rdm-mood-card {
-  background-image: url(https://cdn.pixabay.com/photo/2017/04/19/20/10/morning-2243465_960_720.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#weather-card {
-  background-image: url(https://cdn.pixabay.com/photo/2015/07/13/11/56/girl-843076_960_720.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#playlist-card {
-  background-image: url(https://cdn.pixabay.com/photo/2019/01/27/22/32/mountains-3959204_960_720.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #2f3640;
+  /* Temporary bg color to see div*/
 }
 
 /* Navbar*/
+
+nav.navbar.p-4 { /*Keeps the nav bar fixed to the top at all times.*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #353b48;
+}
+
 nav h1 {
   font-size: 2rem;
   font-weight: bolder;
+  color: white;
+}
+
+.navbar a {
+  color: white;
 }
 .hidden {
   display: none;
@@ -75,13 +37,80 @@ h5 {
   font-weight: 100;
 }
 
+
+button { /* CSS for home page buttons */
+  background-color: #fff;
+  border-color: #745f49!important;
+  border: 2px solid #745f49;
+  font-size: 14px;
+  padding: 12px 16px;
+  margin-left: 3px;
+  margin-bottom: 5px;
+  border-bottom-color: rgb(255,255,255);
+  border-bottom-left-radius: 0px;
+  font-family: Montserrat, sans-serif;
+  transition: 0.3s;
+}
+
+button:hover{ /*CSS for home page buttons when on hover*/
+  cursor: pointer;
+  background: #745f49;
+  color: white;
+}
+
+/* HOME PAGE TILES LAYOUT */
+div.tile.is-ancestor {
+  justify-content: center;
+  margin: 150px 0px 10px 0px;
+
+}
+
+article { /* Affects position, width and height of home page tiles*/
+  right: 14vw;
+  height: 600px;
+  width: 30vw;
+}
+
+@media only screen and (max-width: 600px) {
+  article {
+   /* Trying to figure out how to fix error with tile positions when on mobile. */
+  }
+}
+
+/* **HOME PAGE TILE IMAGES** */
+#mood-card {
+  background-image: url(https://cdn.pixabay.com/photo/2015/01/07/15/51/woman-591576_960_720.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+}
+
+#rdm-mood-card {
+  background-image: url(https://cdn.pixabay.com/photo/2017/04/19/20/10/morning-2243465_960_720.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#weather-card {
+  background-image: url(https://cdn.pixabay.com/photo/2015/07/13/11/56/girl-843076_960_720.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#playlist-card {
+  background-image: url(https://cdn.pixabay.com/photo/2019/01/27/22/32/mountains-3959204_960_720.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 footer {
   position: fixed;
   padding: 2rem 1rem 4rem !important;
-  bottom: 0%;
-  left: 0%;
+  bottom: 0;
+  left: 0;
   z-index: 0.5;
   height: 0.5%;
   width: 100%;
-  font-style: oblique;
+  font-family: Montserrat, sans-serif;
 }
