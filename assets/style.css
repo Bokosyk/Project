@@ -1,6 +1,8 @@
 body, html {
   height: 100%;
   background-color: #353b48; /* Temporary bg color to see div*/
+
+
 }
 
 .button { /* CSS for home page buttons */
@@ -41,7 +43,7 @@ body, html {
 }
 
 /* Navbar*/
-nav h1{
+nav h1 {
   font-size: 2rem;
   font-weight: bolder;
 }
@@ -50,13 +52,11 @@ nav h1{
 }
 .stored-playlist {
   background-color: black;
-
 }
 h5 {
   font-family: Montserrat;
   font-size: rem;
   font-weight: 100;
-
 }
 
 footer {

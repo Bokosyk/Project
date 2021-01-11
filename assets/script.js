@@ -5,10 +5,10 @@ $(document).ready(function () {
   });
 
   //Blank for now.
-  var cityInput = "";
-  var apiKeyOWM = "";
-  var apiKeyYoutube = "";
-  var userInput = "";
+  var cityInput = "Orlando";
+  var apiKeyOWM = "b9a7791a6cf8d58430d53a8881a685bc";
+  var apiKeyYouTube = "AIzaSyCbX4jXaXpEqVNHfPQh_Zn0sktw5SknrB4";
+  
 
   //Skeleton code for weather API
   var queryURL =
@@ -28,15 +28,8 @@ $(document).ready(function () {
   // console.log(queryURL);
 
   //QueryURL for youtube playlists still needs to be found.
-  var queryURL2 =
-    "https://youtube.googleapis.com/youtube/v3/videos?key=[YOUR_API_KEY]" +
-    apiKeyYoutube;
-  $.ajax({
-    url: queryURL2,
-    method: "GET",
-    database: "json",
-    success: function (response2) {
-      console.log(response2);
-    },
-  });
+  // var queryURL2 =
+  //   "https://youtube.googleapis.com/youtube/v3/videos?key=" + apiKeyYoutube;
+
+  
 });
