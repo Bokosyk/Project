@@ -1,19 +1,6 @@
-footer {
-  position: fixed;
-  padding: 2rem 1rem 4rem !important;
-  bottom: 2%;
-  left: 0%;
-  z-index: 0.5;
-  height: 0.5%;
-  width: 100%;
-  font-style: oblique;
-}
 body, html {
   height: 100%;
-}
-
-.home-page-tile {
-  border-radius: 10px;
+  background-color: #353b48; /* Temporary bg color to see div*/
 }
 
 .button { /* CSS for home page buttons */
@@ -36,6 +23,23 @@ body, html {
   color: white;
 }
 
+/* **HOME PAGE TILE IMAGES** */
+#mood-card {
+  background-image: url(https://cdn.pixabay.com/photo/2015/01/07/15/51/woman-591576_960_720.jpg);
+}
+
+#rdm-mood-card {
+  background-image: url(https://cdn.pixabay.com/photo/2017/04/19/20/10/morning-2243465_960_720.jpg);
+}
+
+#weather-card {
+  background-image: url(https://cdn.pixabay.com/photo/2015/07/13/11/56/girl-843076_960_720.jpg);
+}
+
+#playlist-card {
+  background-image: url(https://cdn.pixabay.com/photo/2019/01/27/22/32/mountains-3959204_960_720.jpg);
+}
+
 /* Navbar*/
 nav h1{
   font-size: 2rem;
@@ -53,4 +57,15 @@ h5 {
   font-size: rem;
   font-weight: 100;
 
+}
+
+footer {
+  position: fixed;
+  padding: 2rem 1rem 4rem !important;
+  bottom: 0%;
+  left: 0%;
+  z-index: 0.5;
+  height: 0.5%;
+  width: 100%;
+  font-style: oblique;
 }
