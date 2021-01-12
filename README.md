@@ -1,6 +1,7 @@
 > Simple application that helps users pull up relevant music videos according to their mood and based on their text input. It also provides the current weather in their city and links music based on that weather. 
 
-Screenshot
+![](image/mood_1.gif)
+
 
 ### Table of Contents
 

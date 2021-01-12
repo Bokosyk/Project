@@ -1,6 +1,6 @@
 $(document).ready(function () {
   // YouTube API key
-  var apiKeyYouTube = "";
+  var apiKeyYouTube = "AIzaSyBuv7KGQPgsCS4Imq98FKEm_d5e5FKtOFo";
 
   // function that fetches data from api
   var apiRequest = function (url) {
