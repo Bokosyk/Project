@@ -16,10 +16,11 @@
    <!-- Font Awesome -->
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
  
-   <!-- Personal CSS Stylesheet -->
-   <link rel="stylesheet" href="../assets/style.css" />
    <!-- Icon Library -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+   <!-- Personal CSS Stylesheet -->
+   <link rel="stylesheet" href="../assets/style.css" />
   </head>
 
 <body>
@@ -53,10 +54,45 @@
   </div>
 </nav>
 
+<section>
+  <!-- Input -->
+  <div class="container"></div>
+    <div class="columns">
+      <div class="column is-one-third">
+        <div class="control">
+          <input
+          class="input is-rounded is-large"
+          id="city-input"
+          type="text"
+          placeholder="Enter a city"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Weather Data -->
+    <div class="column is-one-quarter has-background-light">
+      <div id="weather-Info" class="">
+          <p>
+            <h2 class="card-title pb-3">
+              <span id="cityName"></span><span class="date"></span
+              ><span id="today-icon"></span>
+            </h2>
+            <p>Temperature: <span id="temp"></span> °F</p>
+            <p>Humidity: <span id="humid"></span> %</p>
+            <p>Wind Speed: <span id="wind"></span> mph</p>
+          </p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Songs for the Weather -->
+</section>
 
 
 <!--Weather Container-->
-<div class="container">
+<!-- <div class="container">
   <div class="row">
     <div class="col-4 bg-light">
       <p class="search-header my-1">Search for a city</p>
@@ -67,9 +103,9 @@
           <i class="fas fa-search"></i>
           </button>
       </div>
-     </div>
+     </div> -->
 <!--Clear search history button-->
-<button class="btn btn-primary mb-3" type="button" id="clear-history">Clear history</button>
+<!-- <button class="btn btn-primary mb-3" type="button" id="clear-history">Clear history</button>
  <form id="history"></form>
   </div>
   <div class="col-8">
@@ -80,9 +116,9 @@
       <span id="city-name" class="city-name align-middle"></span>
        <img id="current-pic">
        </div>
-    </div>
+    </div> -->
 
-    <!--Footer below-->
+    <!--Footer -->
   <footer class="p-4">
     <a href="https://jgthms.com" target="_blank"><button type="button">GoGitters &gt</button></a>
     <h1 id="Contact">Let's work together...</h1>
@@ -91,16 +127,18 @@
     <a href="https://instagram.com" class="fa fa-instagram"></a>
     <a href="https://youtube.com" class="fa fa-youtube"></a>
   </footer>
-  <!--  -->
+
+  <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"
     ></script>
+
+    <!-- Our JS -->
     <script src="../assets/script.js"></script>
     <script src="../assets/weather.js"></script>
-  
   
 </body>
 </html>
