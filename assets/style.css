@@ -65,7 +65,7 @@ button:hover {
 /* HOME PAGE TILES LAYOUT */
 div.tile.is-ancestor {
   justify-content: center;
-  margin: 150px 0px 10px 0px;
+  margin: 30px 0px 10px 0px;
 }
 
 article {
