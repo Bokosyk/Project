@@ -57,19 +57,23 @@
 
 <!--Weather Container-->
 <div class="container">
-  <div class="row">
-    <div class="col-4 bg-light">
-      <p class="search-header my-1">Search for a city</p>
-      <div class="input-group mb-3">
-       <input id="city-input" type="text" class="form-control" placeholder="Enter city name" aria-label="Enter city name">
-        <div class="input-group-append">
-         <button class="btn btn-primary" type="button" id="search-button">
-          <i class="fas fa-search"></i>
+  <div class="columns">
+    <div class="column">
+      <div class="field">
+        <label id="enterCity" class="label">Enter a City Name</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="City Name"></input>
+          <button class="btn btn primary mt-2" id="search-button">Search
+            <i id="searchButton" class="fas fa-search"></i>
           </button>
+        </div>
       </div>
-     </div>
+    </div>
+  </div>
+</div>
+
 <!--Clear search history button-->
-<button class="btn btn-primary mb-3" type="button" id="clear-history">Clear history</button>
+<!-- <button class="btn btn-primary mb-3" type="button" id="clear-history">Clear history</button>
  <form id="history"></form>
   </div>
   <div class="col-8">
@@ -80,7 +84,7 @@
       <span id="city-name" class="city-name align-middle"></span>
        <img id="current-pic">
        </div>
-    </div>
+  </div> -->
 
     <script
     src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
