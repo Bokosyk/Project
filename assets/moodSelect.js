@@ -1,6 +1,6 @@
 $(document).ready(function () {
   // YouTube API key
-  var apiKeyYouTube = "AIzaSyCbX4jXaXpEqVNHfPQh_Zn0sktw5SknrB4";
+  var apiKeyYouTube = "";
 
   // function that fetches data from api
   var apiRequest = function (url) {
@@ -43,7 +43,7 @@ $(document).ready(function () {
     });
   }
 
-//   on Keypress Enter
+  //   on Keypress Enter
   $("#userInput").keypress(function (event) {
     var keycode = event.keyCode ? event.keyCode : event.which;
     if (keycode == "13") {

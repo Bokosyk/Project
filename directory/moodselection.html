@@ -1,146 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
- 
-<head>
- <meta charset="UTF-8" />
- <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <title>Mood</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mood</title>
 
-   <!-- Montserrat Font from Google -->
-   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- 
-   <!-- Bulma CSS Stylesheet -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
- 
-   <!-- Font Awesome -->
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
- 
-   <!-- Personal CSS Stylesheet -->
-   <link rel="stylesheet" href="../assets/style.css" />
-</head>
- 
-<body class="selection">
- <!-- Navbar -->
- <nav class="navbar p-2" role="navigation" aria-label="dropdown navigation">
-    
-  <!-- Logo -->
-  <div class="navbar-brand">
-    <a class="navbar-item" href="../index.html">
-      
-    <h1 class="logo">Mood</h1>
-    </a>
-  </div>
+    <!-- Montserrat Font from Google -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-  <!-- Items displayed on click of Button-->
-  <div class="navbar-item navbar-end hidden" id="select-link">
-    <a class="navbar-item">
-      About Us
-    </a>
-    <a class="navbar-item" href="./moodselection.html">
-      Select Your Mood
-    </a>
-    <a class="navbar-item" href="./randommood.html">
-      Random Mood
-    </a>
-    <a class="navbar-item" href="./storedplaylist.html">Stored Playlist</a> 
-  </div>
-    
-  <!-- Hamburger Button -->
-  <div class="navbar-item is-hoverable navbar-end pl-0" id="nav-Btn">
-  <i class="is-arrowless navbar-link fas fa-bars fa-2x pl-0"></i>
-  </div>
-</nav>
- <!--Page Title with question about current mood-->
- <!-- <div class="container">
-  <h5>What is your Mood today?</h5>
-  <hr/>
-</div> -->
+    <!-- Bulma CSS Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+    />
 
-<!-- Input -->
-<input class="input is-rounded is-large " id= "userInput" type="text" placeholder="What kind of music are you in the mood for?">
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+      integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+      crossorigin="anonymous"
+    />
+    <!-- Icon Library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-<!-- Centered YouTube iframe -->
-<div class="columns is-mobile is-centered">
-  <div class="column is-half">
-    <p class="bd-notification is-primary">
-      <iframe id="yt-player" class="" src="" allow="autoplay; encrypted-media" frameborder="0" width="840" height="630"></iframe>
-      <br>
-    </p>
+    <!-- Personal CSS Stylesheet -->
+    <link rel="stylesheet" href="../assets/style.css" />
+    <link rel="stylesheet" href="../assets/moodSelect.css" />
+  </head>
+
+  <body class="selection">
+    <!-- Navbar -->
+    <nav class="navbar p-3" role="navigation" aria-label="dropdown navigation">
+      <!-- Logo -->
+      <div class="navbar-brand">
+        <h1 class="logo">Mood</h1>
+      </div>
+
+      <!-- Items displayed on click of Button-->
+      <div class="navbar-item navbar-end hidden" id="select-link">
+        <a class="navbar-item"> About Us </a>
+        <a class="navbar-item" href="./directory/moodselection.html">
+          Select Your Mood
+        </a>
+        <a class="navbar-item" href="directory/randommood.html">
+          Random Mood
+        </a>
+        <a class="navbar-item" href="directory/storedplaylist.html"
+          >Stored Playlist</a
+        >
+      </div>
+
+      <!-- Hamburger Button -->
+      <div class="navbar-item is-hoverable navbar-end pl-0" id="nav-Btn">
+        <i class="is-arrowless navbar-link fas fa-bars fa-2x pl-0"></i>
+      </div>
+    </nav>
+
+    <!-- Input -->
+
+<div class="container"></div>
+  <div class="columns">
+    <div class="column is-three-quarters">
+      <div class="control">
+        <input
+      class="input is-rounded is-large"
+      id="userInput"
+      type="text"
+      placeholder="What kind of music are you in the mood for?"
+    />
+      </div>
+    </div>
   </div>
 </div>
 
-<!-- original -->
-<!-- <div>
-  <iframe id="yt-player" class="html" src="" allow="autoplay; encrypted-media" frameborder="0" width="840" height="630"></iframe>
-</div> -->
-<!--  -->
-<!--Tiles for moods-->
- <!-- <div class="tile is-ancestor"> -->
-  <!-- <div class="tile is-vertical is-8">
-    <div class="tile">
-      <div class="tile is-parent is-vertical">
-        <article class="tile is-child notification is-primary">
-          <p class="title">Calm</p>
-          <p class="subtitle">Top tile</p>
-        </article>
-        <article class="tile is-child notification is-warning">
-          <p class="title">Happy</p>
-          <p class="subtitle">Bottom tile</p>
-        </article>
-      </div>
-      <div class="tile is-parent">
-        <article class="tile is-child notification is-info">
-          <p class="title">Sad</p>
-          <p class="subtitle">With an image</p>
-          <figure class="image is-4by3">
-            <img src="https://bulma.io/images/placeholders/640x480.png">
-          </figure>
-        </article>
-      </div>
-    </div>
-    <div class="tile is-parent">
-      <article class="tile is-child notification is-danger">
-        <p class="title">Anxious/Sad</p>
-        <p class="subtitle">Aligned with the right tile</p>
-        <div class="content"> -->
-          <!-- Content -->
-        <!-- </div>
-      </article>
-    </div>
-  </div>
-  <div class="tile is-parent">
-    <article class="tile is-child notification is-success">
-      <div class="content">
-        <p class="title">Irritated</p>
-        <p class="subtitle">With even more content</p>
-        <div class="content"> -->
-          <!-- Content -->
-        <!-- </div>
-      </div>
-    </article>
-  </div>
-</div> -->
+<!--     
+    <input
+      class="input is-rounded is-large"
+      id="userInput"
+      type="text"
+      placeholder="What kind of music are you in the mood for?"
+    /> -->
 
- 
- 
-   
- 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="../assets/script.js"></script>
-  <script src="../assets/moodSelect.js"></script>
- 
- <!--Footer goes here-->
- <footer class="footer fixed-bottom">
-  <div class="content has-text-centered">
-    <p>
-      <strong>Mood</strong> by
-      <a href="https://jgthms.com">GoGitters</a> <br><a href=" ">About Us</a>
-      <br><a>Copyright &copy;</a> 
- 
-</body>
- 
+    <!-- Centered YouTube iframe -->
+    <div class="columns is-mobile is-centered">
+      <div class="iframe-container column is-half">
+        <iframe
+          class="responsive-iframe"
+          id="yt-player"
+          class=""
+          src=""
+          allow="autoplay; encrypted-media"
+          frameborder="0"
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="p-4">
+      <a href="https://jgthms.com" target="_blank"
+        ><button type="button">GoGitters &gt</button></a
+      >
+      <h1 id="Contact">Let's work together...</h1>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-youtube"></a>
+    </footer>
+
+    <!--jQuery Links  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Our JS -->
+    <script src="../assets/script.js"></script>
+    <script src="../assets/moodSelect.js"></script>
+  </body>
 </html>
