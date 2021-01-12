@@ -1,6 +1,8 @@
 $(document).ready(function () {
   var currentDate = moment().format("L");
 
+  var desc = $("#description");
+
   //   on Keypress Enter
   $("#city-input").keypress(function (event) {
     var keycode2 = event.keyCode ? event.keyCode : event.which;
@@ -59,11 +61,11 @@ $(document).ready(function () {
       database: "json",
     });
   };
-  function runPlaylist2(weatherDescription) {
-    var musicSearchInput = weatherDescription + " music";
+  function runPlaylist2(desc) {
+    var musicSearchInput2 = desc + " music";
 
     // Url for YouTube search api
-    var searchUrl2 = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&type=playlist&maxResults=5&q=${musicSearchInput}&key=${apiKeyYouTube}`;
+    var searchUrl2 = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&type=playlist&maxResults=5&q=${musicSearchInput2}&key=${apiKeyYouTube}`;
 
     apiRequest2(searchUrl2).done(function (response2) {
       // logic to select a playlistId/channelId/videoId
@@ -74,12 +76,12 @@ $(document).ready(function () {
         var randomIndex2 = Math.floor(
           Math.random() * Math.floor(response2.items.length - 1)
         );
-        var playlistId = response2.items[randomIndex2].id.playlistId;
-        var playlistUrl = `https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${playlistId}&key=${apiKeyYouTube}`;
-        apiRequest2(playlistUrl).done(function (playlist) {
+        var playlistId2 = response2.items[randomIndex2].id.playlistId;
+        var playlistUrl2 = `https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${playlistId2}&key=${apiKeyYouTube}`;
+        apiRequest2(playlistUrl2).done(function (playlist) {
           console.log(playlist);
-          var publicPlaylistUrl = `https://www.youtube.com/embed?listType=playlist&list=${playlistId}`;
-          $("#yt-player-weather").attr("src", publicPlaylistUrl);
+          var publicPlaylistUrl2 = `https://www.youtube.com/embed?listType=playlist&list=${playlistId2}`;
+          $("#yt-player-weather").attr("src", publicPlaylistUrl2);
         });
       }
       // after selecting, search for item to play
