@@ -30,14 +30,18 @@ $(document).ready(function () {
         apiKeyWeather,
       datatype: "json",
       success: function (response) {
-        // converts K to F
-        // var tempInF = ((response.main.temp - 273.15) * 1.8 + 32).toFixed(0);
+        console.log(response);
+        
+        var weatherDescription = response.weather[0].description;
 
         // to temperature, humidity, wind speed on the page
         $("#cityName").text(response.name + " (" + currentDate + ")");
         $("#temp").text(response.main.temp);
+        $("#description").text(weatherDescription);
         $("#humid").text(response.main.humidity);
         $("#wind").text(response.wind.speed);
+
+        console.log(weatherDescription);
       },
     });
   }
