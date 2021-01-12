@@ -5,17 +5,16 @@ $(document).ready(function () {
     });
   
     //Blank for now.
-    var cityInput = "Orlando";
+    var cityInput = "city-name";
     var apiKeyOWM = "b9a7791a6cf8d58430d53a8881a685bc";
     var apiKeyYouTube = "AIzaSyCbX4jXaXpEqVNHfPQh_Zn0sktw5SknrB4";
+    let searchHistory = JSON.parse(localStorage.getItem("search")) || [];
     
   
     //Skeleton code for weather API
     var queryURL =
       "https://api.openweathermap.org/data/2.5/weather?q=" +
-      cityInput +
-      "&appid=" +
-      apiKeyOWM;
+      cityInput + "&appid=" + apiKeyOWM;
   
     $.ajax({
       url: queryURL,

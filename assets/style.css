@@ -14,7 +14,6 @@ html {
   padding-top: 100px;
   min-height: 100%;
   background-color: #2f3640;
-  /* Temporary bg color to see div*/
   margin-bottom: 100px;
   clear: both; 
 }
@@ -205,3 +204,6 @@ footer {
 #enterCity {
   color: white;
 }
+#clear-history {
+  margin-left: 60px;
+ }
