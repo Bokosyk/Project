@@ -12,6 +12,9 @@ $(document).ready(function () {
       var citySearch = $("#city-input").val();
       // gets the weather data for the user input
       weather(citySearch);
+
+      $("#weather-container").removeClass("hidden");
+
       runPlaylist2(event.target.value.trim());
     }
   });
